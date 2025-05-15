@@ -23,7 +23,7 @@ btn.addEventListener('click', async () => {
         }
 
         // Get the response text (or JSON if your server returns JSON)
-        const data = await response.json()
+        const data = await response.text()
         geminiResponseContainer.textContent = data
         // console.log(typeof data)
         // console.log(JSON.parse(response))

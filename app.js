@@ -30,7 +30,7 @@ app.post('/gemini', async (req, res) => {
 
         // Send the response back to the client
         // res.send(response);
-        res.json(response);
+        res.send(response);
 
     } catch (error) {
         console.error('Error calling Gemini API:', error);
